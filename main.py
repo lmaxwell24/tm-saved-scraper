@@ -24,7 +24,8 @@ flapp = Flask(__name__)
 def index():
     return get_saved_match_text()
 
-flapp.run()
+if __name__ == "__main__":
+    flapp.run()
 
 
 # print(app.TM["Saved Match"].wrapper_object())
