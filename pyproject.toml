@@ -1,0 +1,14 @@
+[project]
+name = "tm-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.2",
+    "pywinauto>=0.6.9",
+    "requests>=2.32.5",
+]
+
+[tool.uv.sources]
+pywinauto = { git = "https://github.com/pywinauto/pywinauto" }
