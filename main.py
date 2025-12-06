@@ -3,11 +3,13 @@ from pywinauto.findwindows import find_elements
 
 from flask import Flask
 
+pid = find_elements(best_match="Saved Match", backend="atspi", top_level_only=False)[0].parent._pid
+
 app = Application()
 app.connect(
     # path="com.dwabtech.TM"
     # pid=6948
-    pid=6888
+    pid=pid
     # pid = 7033
 )
 print(app)
