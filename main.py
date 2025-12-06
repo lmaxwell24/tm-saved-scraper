@@ -16,7 +16,7 @@ print(app)
 # get the item directly after the "saved match" text
 
 def get_saved_match_text():
-    return app.TM.by(parent=app.TM["Saved Match"].parent(), title_re="Q[0-9]*", found_index=-1).texts()[0][1]
+    return app.TM.by(parent=app.TM["Saved Match"].parent(), title_re="Q[0-9]*", found_index=-1).texts()[0][1:]
 
 print(get_saved_match_text())
 
